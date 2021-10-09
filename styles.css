@@ -78,6 +78,13 @@ input:focus ~ .bar:after {
   width: 50%;
 }
 
+.small {
+  font-size: 10px;
+  font-style: italic;
+  margin-left: 20px;
+  color: #555;
+}
+
 .title {
   font-size: 28px;
   margin: 10px auto;
@@ -161,3 +168,8 @@ input:focus ~ .bar:after {
 	transform: scale(0.96);
 }
 
+/* ERROR */
+.error {
+  font-size: 20px;
+  color: rgb(253, 51, 51)
+}
