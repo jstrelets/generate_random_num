@@ -20,7 +20,10 @@ btn.addEventListener('click', () => {
         return result.textContent = 'Недопустимое первое значение';
     } else if (b < -999999 || b > 999999 ) {
         result.classList.add('error')
-        return result.textContent = 'Недопустимое последнее значениие   ';
+        return result.textContent = 'Недопустимое последнее значениие';
+    } else if (a === '' || b === '') {
+        result.classList.add('error')
+        return result.textContent = 'Заполните все поля';
     }
 
     return result.textContent = `${generateRandomNumber(a, b)}`;
