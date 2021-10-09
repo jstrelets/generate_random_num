@@ -24,6 +24,9 @@ btn.addEventListener('click', () => {
     } else if (a === '' || b === '') {
         result.classList.add('error')
         return result.textContent = 'Заполните все поля';
+    } else if (a > b) {
+        result.classList.add('error')
+        return result.textContent = 'Второе значение не может быть меньше первого';
     }
 
     return result.textContent = `${generateRandomNumber(a, b)}`;
